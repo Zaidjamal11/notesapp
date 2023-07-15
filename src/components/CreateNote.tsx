@@ -74,12 +74,14 @@ const CreateNote: React.FC<ICreateNoteProps> = ({ addNotes }) => {
         placeholder="Title"
         onChange={(e) => onValueChange(e)}
         name="title"
+        value={note.title}
       />
       <Box component="span">30</Box>
       <InputBase
         placeholder="Details"
         onChange={(e) => onValueChange(e)}
         name="details"
+        value={note.details}
       />
       <Box component="span">50</Box>
       <InputBase
@@ -87,6 +89,7 @@ const CreateNote: React.FC<ICreateNoteProps> = ({ addNotes }) => {
         defaultValue={"#F5F5F5"}
         onChange={(e) => onValueChange(e)}
         name="color"
+        value={note.color}
       />
       <Button variant="outlined" onClick={() => onCreateNote()}>
         Create

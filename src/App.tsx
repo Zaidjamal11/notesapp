@@ -20,6 +20,13 @@ function App() {
 
   }
 
+  const deleteNote = (id : number) => {
+    const updatedNotes = notes.filter(note => note.id !== id);
+    setNotes(updatedNotes);
+    
+
+  }
+
 
 
   return (
@@ -27,7 +34,7 @@ function App() {
     <Header />
     <Box style={{ padding: 20}}> 
     <CreateNote addNotes={addNotes} />
-    <Notes />
+    <Notes notes={notes} deleteNote={deleteNote} />
     </Box>
     
     
