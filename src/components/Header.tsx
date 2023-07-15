@@ -5,7 +5,7 @@ import { logo } from './constants/constants';
 const Header : React.FC = () => {
   return (
     <div>
-        <AppBar color="transparent">
+        <AppBar color="transparent" position='static'>
             <Toolbar >
                 <img src={logo} alt="logo"style={{ width: '30px', marginRight: '10px'}} />
                 <Typography>EverNote</Typography>
