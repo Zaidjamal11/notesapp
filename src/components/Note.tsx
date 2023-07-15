@@ -29,7 +29,6 @@ const Note: React.FC<INOteProps> = ({ note, deleteNote }) => {
                 <Wrapper>
                     <Typography>{note.title}</Typography>
                     <Typography>{note.details}</Typography>
-                    <Typography>{note.title}</Typography>
                     <Typography>{note.date}</Typography>
                     <Button variant="outlined" onClick={() => deleteNote(note.id)} >Delete</Button>
                 </Wrapper>
